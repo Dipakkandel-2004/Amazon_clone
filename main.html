@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        * {
+            margin: 0;
+            border: border-box;
+
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            background-color: #0F1111;
+            justify-content: space-around
+        }
+
+        .image {
+            height: 50px;
+            width: 130px;
+        }
+
+        .image {
+            background-image: url(Untitled.png);
+            background-size: cover;
+        }
+
+        .border {
+            border: 1.5px solid transparent;
+
+        }
+
+        .border:hover {
+            border: 1.5px solid white;
+            cursor: pointer;
+        }
+
+
+        .deliver {
+            color: #CCCCCC;
+            margin-left: 25px;
+            font-size: 1rem;
+        }
+
+        .nepal {
+            color: #FFFFFF;
+
+        }
+
+        .loc {
+            background-image: url(location.png.png);
+            background-size: cover;
+            height: 23px;
+            width: 25px;
+            margin-top: -6px;
+
+        }
+
+        .lo {
+            display: flex;
+        }
+
+        .lowlocation {
+            display: flex;
+        }
+
+        .location {
+            height: 50px;
+            width: 89px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .icon {
+            background-image: url(logo.png);
+            height: 40px;
+            width: 45px;
+            background-size: cover;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+
+        }
+
+        .search {
+            display: flex;
+            height: 40px;
+            width: 450px;
+            border-radius: 4px;
+
+        }
+
+        .select1 {
+            background-color: #f3f3f3;
+            width: 50px;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;
+
+        }
+
+        .search2 {
+            width: 100%;
+            border: none;
+            font-size: 1em;
+
+        }
+
+        .flag0 {
+            background-image: url(flag.png);
+            background-size: cover;
+            width: 40px;
+            height: 30px;
+        }
+
+        .flag1 {
+            color: white;
+            background-color: black;
+            border: none;
+
+        }
+
+        .map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            height: 50px;
+        }
+
+        .span {
+            color: white;
+            font-size: 0.85rem;
+            margin-left: 5px;
+        }
+
+        .signin {
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            width: 131px;
+            justify-content: center;
+
+        }
+
+        .signin1 {
+
+
+            background-color: black;
+            color: white;
+            border: none;
+            font-weight: bolder;
+        }
+
+        .returnn {
+            height: 50px;
+            width: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .return {
+            color: white;
+        }
+
+        .order {
+            color: white;
+        }
+
+        .logoo {
+            background-image: url(cart.png);
+            background-size: cover;
+            width: 45px;
+            height: 45px;
+            background-color: black;
+            margin-bottom: 5px;
+
+        }
+
+        .cartsub {
+            background-color: black;
+            color: white;
+            font-size: 0.8rem;
+            margin-bottom: 9px;
+
+
+        }
+
+        .cart {
+            display: flex;
+            align-items: self-end;
+            text-align: center;
+            height: 52px;
+            width: 110px;
+
+
+
+        }
+
+
+
+        .navbar2 {
+            background-color: #222f3d;
+
+            width: 100%;
+            height: 39px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content2 {
+            display: flex;
+            align-items: center;
+            height: 39px;
+
+        }
+
+        .content2 li {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            padding: 8px;
+
+        }
+
+        .list {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .list:hover {
+            border: 1.5px solid white;
+
+        }
+
+        .list1 {
+            margin-left: -25px;
+        }
+
+        .section1 {
+            height: 750px;
+            width: 100%;
+            background-image: url(section.png);
+            background-size: cover;
+        }
+
+        .divA {
+            width: 380px;
+            height: 420px;
+            background-color: white;
+            color: black;
+        }
+
+        .divB {
+            width: 380px;
+            height: 420px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .divC {
+            background-color: white;
+            width: 380px;
+            height: 420px;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+        }
+
+        .divA {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .divA2 {
+            background-image: url(diva1.jpg);
+            height: 350px;
+            width: 340px;
+            background-size: cover;
+
+        }
+
+        .section2 .divA2 {
+            background-image: url(toy.jpg);
+            height: 350px;
+            width: 340px;
+            background-size: cover;
+
+
+
+        }
+
+        .divA1 {
+            width: 340px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            font-weight: 900;
+            font-size: 1.5em;
+
+        }
+
+        .divA3 {
+            height: 50px;
+            width: 340px;
+            display: flex;
+            align-items: center;
+
+        }
+
+
+
+        .divB1 {
+            width: 350px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            font-weight: 900;
+            font-size: 1.5em;
+
+        }
+
+        .divB2 {
+            background-image: url(diva2.jpg);
+            height: 350px;
+            width: 350px;
+            background-size: cover;
+
+        }
+
+        .section2 .divB2 {
+            background-image: url(man\ fashion.jpg);
+            height: 350px;
+            width: 350px;
+            background-size: cover;
+
+        }
+
+        .section2 .divB4 {
+            background-image: url(jens.jpg);
+            height: 350px;
+            width: 350px;
+            background-size: cover;
+
+        }
+
+        .divB3 {
+            height: 50px;
+            width: 340px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .divC1 {
+            width: 350px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            font-weight: 900;
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+
+        .divC2 {
+            height: 300px;
+            width: 350px;
+            display: flex;
+            margin-left: 10px;
+
+
+
+        }
+
+        .divC21 {
+            height: 150px;
+            width: 180px;
+
+            background-image: url(headset.jpg);
+            background-size: cover;
+
+        }
+
+        .divC22 {
+            height: 150px;
+            width: 180px;
+
+            background-image: url(mouse.png);
+            background-size: cover;
+
+        }
+
+        .divC23 {
+            height: 150px;
+            width: 180px;
+
+            background-image: url(keybord.jpg);
+            background-size: cover;
+
+        }
+
+        .divC24 {
+            height: 150px;
+            width: 180px;
+
+            background-image: url(chair.jpg);
+            background-size: cover;
+
+        }
+
+        .divC3 {
+            height: 50px;
+            width: 340px;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .section2 {
+            height: 450px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(241, 241, 241);
+
+
+        }
+
+        .panal1 {
+            background-color: #37475a;
+            color: white;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .panal2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: #222f3d;
+            color: white;
+            height: 300px;
+
+
+        }
+
+        ul {
+            height: 200px;
+        }
+
+        ul p {
+            font-weight: bold;
+        }
+
+        ul a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding-top: 8px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo border">
+                <div class="image">
+
+                </div>
+            </div>
+            <div class="location border">
+                <p class="deliver">Deliver to</p>
+                <div class="lo">
+                    <div class="lowlocation">
+                        <div class="loc">
+                        </div>
+                        <span class="nepal">Nepal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="search ">
+                <select class="select1">
+                    <option>All</option>
+                </select>
+                <input class="search2" placeholder="Search Amazon">
+                <div class="icon"></div>
+            </div>
+            <div class="map border">
+                <div class="flag0"></div>
+                <div>
+                    <select class="flag1">
+                        <option>EN</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="signin border">
+                <div>
+                    <p><span class="span">Hello,sign in</span></p>
+                </div>
+                <div> <select class="signin1">
+                        <option>Account and list</option>
+                    </select>
+                </div>
+            </div>
+            <div class="returnn border">
+                <div class="return">Return</div>
+                <div class="order">& Order</div>
+            </div>
+            <div class="cart border">
+                <div class="logoo">
+
+                </div>
+                <div class="cartsub">
+                    Cart
+                </div>
+            </div>
+        </div>
+        <div class="divmain">
+            <div class="left"></div>
+            <div class="mid"></div>
+            <div class="right"></div>
+        </div>
+        <div class="navbar2">
+
+            <ul class="content2">
+
+                <li class="list list1">☰All</li>
+                <li class="list">Today's Deal</li>
+                <li class="list">Customer services</li>
+                <li class="list">Registry</li>
+                <li class="list">Gift cards</li>
+                <li class="list">Sell</li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <section class="section1">
+        <div class="divA">
+            <div class="divA1">Deals in PCs</div>
+            <div class="divA2"></div>
+            <div class="divA3"><a href="#">Shop now</a></div>
+        </div>
+        <div class="divB">
+            <div class="divB1">Beauty steals under $25</div>
+            <div class="divB2"></div>
+            <div class="divB3"><a href="#">Shop now</a></div>
+        </div>
+        <div class="divC">
+            <div class="divC1">Gaming accessories</div>
+            <div class="divC2">
+                <div class="subdiv1">
+                    <div class="divC21">headset</div>
+                    <div class="divC22">keybord</div>
+                </div>
+                <div class="subdiv2">
+                    <div class="divC23">mouse</div>
+                    <div class="divC24">chair</div>
+                </div>
+            </div>
+            <div class="divC3"><a href="#">See more</a></div>
+        </div>
+
+
+
+    </section>
+    <section class="section2">
+        <div class="divA">
+            <div class="divA1">Toys under $25</div>
+            <div class="divA2"></div>
+            <div class="divA3"><a href="#">Shop now</a></div>
+        </div>
+        <div class="divB">
+            <div class="divB1">Beauty steals under $25</div>
+            <div class="divB2"></div>
+            <div class="divB3"><a href="#">Shop now</a></div>
+        </div>
+        <div class="divB">
+            <div class="divB1">Jens under $25</div>
+            <div class="divB4"></div>
+            <div class="divB3"><a href="#">Shop now</a></div>
+        </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="panal1">
+            Back to Top
+        </div>
+        <div class="panal2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#"> Careers</a>
+                <a href="#"> Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#"> Amazon Devices</a>
+                <a href="#"> Amazon Science</a>
+            </ul>
+            <ul>
+                <p> Make Money with Us</p>
+                <a href="#"> Sell products on Amazon</a>
+                <a href="#">Sell on Amazon Business</a>
+                <a href="#">Sell apps on Amazon</a>
+                <a href="#">Become an Affiliate </a>
+                <a href="#"> Advertise Your Products</a>
+                <a href="#">Self-Publish with Us</a>
+                <a href="#">Host an Amazon Hub </a>
+                <a href="#">See More Make Money with Us</a>
+            </ul>
+
+            <ul>
+                <p>Amazon Payment Products</p>
+
+                <a href="#">Amazon Business Card </a>
+                <a href="#">Shop with Points</a>
+                <a href="#">Reload Your Balance </a>
+                <a href="#">Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p> Let Us Help You</p>
+                <a href="#">Amazon and COVID-19</a>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Shipping Rates & Policies</a>
+                <a href="#">Manage Your Content and Devices</a>
+                <a href="#">Amazon Assistant</a>
+                <a href="#">Help</a>
+            </ul>
+
+    </footer>
+
+
+
+</body>
+
+</html>
